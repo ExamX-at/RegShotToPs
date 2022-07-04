@@ -1,2 +1,2 @@
 # RegShotToPs
- Simple Converter from regshot diff to Powershell reistry commands
+ Simple Converter from regshot diff to Powershell registry commands
