@@ -22,7 +22,8 @@ public class main {
                     System.out.println("New-Item -Path \"" + literalPath.replace("§", ":") + "\" -ItemType Directory -Force");
                 }
                 psString += "\"" + literalPath + "\" -PropertyType ";
-                String value = line.substring(line.indexOf(':')).trim().replace(":", "").trim();
+                String value = line.substring(line.indexOf(':')).trim();
+                value = value.substring(1).trim();
                 char first = value.toCharArray()[0];
                 String name = path.substring(path.lastIndexOf("\\")).replace('\\', ' ').trim();
                 if (first == '\"') {
